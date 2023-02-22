@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun(){
+            var x=document.getElementById("image");
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img" style="width: 250px; height: 250px;">
+        <img id="image" src="2.jpg" alt="" width="250px" height="250px">
+    </div>
+    <button onclick="fun()">click me</button>
+</body>
+</html>

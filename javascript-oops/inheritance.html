@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // class A{
+        //     constructor(a,b){
+        //         this.a=a
+        //         this.b=b
+        //         document.write(this.a,this.b)
+        //     }
+        // }
+        // class B extends A{
+        //     constructor(a,b,c){
+        //         super(a,b)
+        //         this.c=c
+        //         document.write(this.c)
+        //     }
+        // }
+        // var obj1= new B(1,2,3)
+        class car{
+            constructor(brand_name){
+                this.name=brand_name
+                document.write(this.name)
+            }
+        }
+        class model extends car{
+            constructor(brand_name,model_name){
+                super(brand_name)
+                this.nm=model_name
+                document.write(" "+this.nm)
+            }
+        }
+        var obj1= new model("Toyota","Supra")
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+a function defined inside a class is known as member function.
+syntax:
+class class_name{
+    constructor(arguments){
+        function body
+    }
+}
+
+var obj=new class_name(argument values)
+
+
+new is used to create new instance of an object that has a constructor function.
+static variable: cant change the value through out the program, it is put inside class and outside function
+syntax:
+class class_name{
+    static.variable_name=value
+    constructor(argument){
+        function body
+        document.write(class_name.variable_name)
+    }
+}
+var obj=new class_name("amal")
+
+
+django introduction:
+django is a free and open source framework
+charcteristics of django
+less code, not repeted, fast development, consistent design.
+some populor site bulid using python django: chess, instagram, national geographic, mozilla, pinterest.
+
+ORM: the main goal of ORM is to send data b/w a data base and a model in an application(OBJECT RELATIONAL MAPPER) it act as a bridge b/w the
+data base and the model. which is used to convert a python class into an sql query.
+
+project creation
+create a folder project
+open terminal and choose cmd
+install django in cmd using: pip install django
+create project: django-admin startproject project_name
+django project structure-
+create an app: python manage.py startapp app_name
+django app is a pyhton package that may use common django convention such as models, views, templates etc.
+python manage.py makemigrations: it is a command  that is responsible to detect changes you makes in your models.
+python manage.py migrate: it is a command that we use to apply changes that you make in your models.
+python manage.py runserver: it is a command that will start up a development server for your django project.
+
+the difference a project and app is a project is a collection of configuration file and app is a submodule of project which is written to
+perform business logic. it may use django conventions such as models, urls, views, etc.
+
+HttpResponse(): it is in django web application that returns a text response.
+
+render(): it is a function that combines a template with a view and returns an html page.
+
+template: it is a directory that is used to collect html files.
+
+newapp-files-directory-templates
+
+forms.py: it is where the django documentation recommends you to place all your form code to keep your code easily maintainable
+
+Forms:a collection of fileds plus their associated data.
+
+is_valid(): is a function that is used to check the validity of form fileds.
+
+cleaned_data: valid form fileds are known as cleaned datas.
+
+csrf: cross sites request forgery it is an attack that occures in webpage. To prevent this attack we use a csrf token 
+{% csrf_token %}
+
+
+
+django has a inbuild database that is dbsql
+
+get method is used to take data from backend to front end
+context: it in django is a dictionary that is used to pass data from backend to front end
+interpolation {{}}: it is the process substitutuing values of a variable into a placeholders in a string it is a method of catching values
+that are passed from backend to front end.
+enctype: which is an atrubute that is used to encrypt your file field.
+pillow: it is a package that is used for image class in django 
+static: it is a folder used to collect external files that is image files, js files, css files, etc.
+
+<a href="{% static i %}" download>click here to download</a>
+
+filter: used to filter your search and allowes you to return only the rows that matches the search 
+messages.success: it is a framework that allowes you to store messages in one request and retrive them in the request page.
+uuid: it stands for universaly unique identifiers.
+uuid4() is the function used to generate random id/ uuid.
+in send mail function we pass subject, message, from_email, recepient
+smtp that stands for simple mail transfer protocol. it is used to transfer mail from one user to another.
+authenticate(): it is a function that is used to verify a set of credentials, it takes credentials as keyword argument, username and password for the default cause check them and returns a user objects.
+add to cart and 
+what is request in django.
+what is user authentication.
+what is middleware in django.
+what is django context.
+what is the latest version of django.
+whaat is the difference b/w the char field and text field.
+common exceptions in django.
+what is django cookies.
+how to check the latest version of django
+what is django.shourtcuts.render
+what is commands in django to create projects and app.
+what is queries set in django.
+explain the type of files that create automtically when you create a project.
+whtat is the difference b/w a filter function and a get function.
+what is django session.
+how to create an admin
+python manage.py createsuperuser
+username:
+email:
+password:
+retype:
+__str__:the string method returns a human readable or informal string representation of an object.
+and tracks chages to a file over a set of file over time. 
+git init
+git add <filename>
+git add .
+git status
+git commit
+git push
+git pull
+it is used to initialize an empty and a new git repository 
+untracked files: thease are files that are in working directory but not added to staging area with git add command
+it helps to find all untracked files.
+git commit: it is used to save the changes to a git repository. it takes all the changes made to repository since last moment and packages them 
+into a commit object.
+git branch -m main: to change branch to main

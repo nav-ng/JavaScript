@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var flag=0
+        var str=prompt("Enter a word")     
+        var len=str.length      
+        if(len%2!=0){
+            var newlen=len/2
+            var newlength=Math.ceil(newlen)
+            for(var i=0;i<newlength-1;i++){
+                for(var j=len-i-1;j>len-i-2;j--){
+                    if(str[i]!=str[j]){
+                        flag=1
+                    }
+                }
+            }           
+        }
+        else{      
+            for(var i=0;i<len;i++){
+                for(var j=len-i-1;j>len-i-2;j--){
+                    if(str[i]!=str[j]){
+                        flag=1
+                    }
+                }
+            } 
+        }
+        if (flag!=1){
+                document.write(str," is a palindrome")
+            }
+            else{
+                document.write(str," is not a palindrome")
+            }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

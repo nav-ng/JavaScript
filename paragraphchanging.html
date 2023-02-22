@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFun(){
+            document.getElementById("para").innerHTML="This is a new paragraph";
+            document.getElementById("para").style.color="red";
+            document.getElementById("para").style.fontSize="100px";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">This is a paragraph</p>
+    <button onclick="myFun()">click me to change this paragraph and its style</button>
+</body>
+</html>

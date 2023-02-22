@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var num1
+        var num2
+        document.write("")
+        function add(num1,num2){
+            return num1+num2
+        }
+        function sub(num1,num2){
+            return num1-num2
+        }
+        function multiply(num1,num2){
+            return num1*num2
+        }
+        function division(num1,num2){
+            return num1/num2
+        }
+        
+        choice=parseInt(prompt("1.addition 2.substraction 3.multiplication 4.division"))
+        firstno=parseInt(prompt("Enter first number"))
+        secondno=parseInt(prompt("Enter second number"))
+        if(choice==1){
+            result=add(firstno,secondno)
+            document.write(result)
+        }
+        else if(choice==2){
+            result=sub(firstno,secondno)
+            document.write(result)
+        }
+        else if(choie==3){
+            result=mul(firstno,secondno)
+            document.write(result)
+        }
+        else if(choice==4){
+            result=div(firstno,secondno)
+            document.write(result)
+        }
+        else{
+            document.write("Invalid option")
+        }
+        
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

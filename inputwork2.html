@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function length(){
+            var mystring=document.getElementById("string").value;
+            var len=mystring.length
+            document.getElementById("result").value=len;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="string" placeholder="Enter a string">
+    <br>
+    <button onclick="length()">Find length</button>
+    <br>
+    <input type="number" id="result" placeholder="output">
+</body>
+</html>
